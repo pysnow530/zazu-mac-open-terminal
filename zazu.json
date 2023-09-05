@@ -17,7 +17,7 @@
       {
         "id": "OpenTerminalInDirectoryKey",
         "type": "PrefixScript",
-        "keyword": "term",
+        "prefix": "term",
         "space": true,
         "args": "Required",
         "script": "open_terminal_in_directory.js",
