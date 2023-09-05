@@ -14,7 +14,7 @@ module.exports = (pluginContext) => {
       resolve([
         {
           icon: 'fa-terminal',
-          title: 'Open term in ${dir}',
+          title: `Open term in ${dir}`,
           value: dir
         }
       ])
