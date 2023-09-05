@@ -1,5 +1,3 @@
-set results to ""
-
 on run argv
   set results to item 1 of argv
   tell application "iTerm2"
