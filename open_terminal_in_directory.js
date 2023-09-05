@@ -9,7 +9,15 @@ module.exports = (pluginContext) => {
     iterm2: `osascript ${appleScriptITerm2}`,
   }
   return (dir, env) => {
-    const command = (cmd[env.terminal] || cmd.terminal) + dir
-    return new Promise((resolve) => exec(command, resolve))
+    const command = (cmd[env.terminal] || cmd.terminal) + ' ' + dir
+    return new Promise((resolve) => {
+      resolve([
+        {
+          icon: 'fa-terminal',
+          title: 'Open term in ${dir}',
+          value: dir
+        }
+      ])
+    })
   }
 }
