@@ -13,6 +13,18 @@
         "connections": [
           "OpenTerminal"
         ]
+      },
+      {
+        "id": "OpenTerminalInDirectoryKey",
+        "type": "PrefixScript",
+        "keyword": "term",
+        "space": true,
+        "args": "Required",
+        "script": "open_terminal_in_directory.js",
+        "debounce": 75,
+        "connections": [
+          "OpenTerminalInDirectory"
+        ]
       }
     ],
     "output": [
@@ -20,6 +32,11 @@
         "id": "OpenTerminal",
         "type": "UserScript",
         "script": "open_terminal.js"
+      },
+      {
+        "id": "OpenTerminalInDirectory",
+        "type": "UserScript",
+        "script": "open_terminal_in_directory.js"
       }
     ]
   }
