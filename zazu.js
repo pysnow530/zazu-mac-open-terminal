@@ -4,7 +4,7 @@ module.exports = {
   "version": "1.0.1",
   "description": "Open terminal here.",
   "blocks": {
-    "external": [
+    "input": [
       {
         "id": "OpenTerminalKey",
         "type": "Keyword",
