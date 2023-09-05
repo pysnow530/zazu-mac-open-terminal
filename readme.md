@@ -5,15 +5,14 @@ Open terminal to the current path of the finder window.
 ## Usage
 
 Simply navigate, in Finder, to the directory you want to open in Terminal (or
-iTerm2) and hit the keyboard shortcut `cmd+shift+s` and this plugin will open
-it for you.
+iTerm2).
 
 ## Installing
 
-Add the package to your plugins array in `./zazurc.js`.
+Add the package to your plugins array in `~/.zazurc.json`.
 
 ~~~ javascript
-'amjith/zazu-mac-open-terminal',
+"pysnow530/zazu-mac-open-terminal",
 ~~~
 
 ### Options
@@ -23,10 +22,9 @@ You can overwrite the keyboard shortcut by defining a variable with the name
 
 ~~~ javascript
 {
-  name: 'amjith/zazu-mac-open-terminal',
-  variables: {
-    OpenTerminalKey: 'alt+shift+t',
-  },
+  "plugins": [
+    "pysnow530/zazu-mac-open-terminal"
+  ]
 }
 ~~~
 
@@ -35,10 +33,9 @@ use iTerm2 instead you can change that preference here as well.
 
 ~~~ javascript
 {
-  name: 'amjith/zazu-mac-open-terminal',
-  variables: {
-    OpenTerminalKey: 'alt+shift+t',
-    terminal: 'iterm2',
+  "name": "pysnow530/zazu-mac-open-terminal",
+  "variables": {
+    "terminal": "iterm2",
   },
 }
 ~~~

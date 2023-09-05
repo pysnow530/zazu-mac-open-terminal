@@ -1,24 +1,27 @@
 // Deprecated use zazu.json instead
 module.exports = {
-  name: 'Open Terminal',
-  version: '1.0.0',
-  description: 'Open terminal here.',
-  blocks: {
-    external: [
+  "name": "Open Terminal",
+  "version": "1.0.1",
+  "description": "Open terminal here.",
+  "blocks": {
+    "external": [
       {
-        id: 'OpenTerminalKey',
-        type: 'Hotkey',
-        hotkey: 'cmd+shift+s',
-        name: 'OpenTerminalKey',
-        connections: ['OpenTerminal'],
-      },
+        "id": "OpenTerminalKey",
+        "type": "Keyword",
+        "keyword": "term",
+        "title": "Open Terminal Here",
+        "icon": "fa-terminal",
+        "connections": [
+          "OpenTerminal"
+        ]
+      }
     ],
-    output: [
+    "output": [
       {
-        id: 'OpenTerminal',
-        type: 'UserScript',
-        script: 'open_terminal.js',
-      },
-    ],
-  },
+        "id": "OpenTerminal",
+        "type": "UserScript",
+        "script": "open_terminal.js"
+      }
+    ]
+  }
 }
