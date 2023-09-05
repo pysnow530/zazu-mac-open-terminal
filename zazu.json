@@ -20,7 +20,7 @@
         "prefix": "term",
         "space": true,
         "args": "Required",
-        "script": "open_terminal_in_directory.js",
+        "script": "open_terminal_in_directory_items.js",
         "debounce": 75,
         "connections": [
           "OpenTerminalInDirectory"
